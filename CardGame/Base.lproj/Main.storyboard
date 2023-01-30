@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CardGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="ofB-ja-cwg">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="jdL-WG-bhb">
-                                <rect key="frame" x="134" y="52" width="122" height="67"/>
+                                <rect key="frame" x="135.66666666666666" y="64" width="121.99999999999997" height="67"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="5b9-gZ-lCw" userLabel="Cards and Button Stack View">
-                                <rect key="frame" x="60" y="354.66666666666669" width="270" height="235.00000000000006"/>
+                                <rect key="frame" x="61.666666666666657" y="358.66666666666669" width="270" height="235.00000000000006"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="YHJ-vS-7qh" userLabel="Cards Stack View">
                                         <rect key="frame" x="0.0" y="0.0" width="270" height="170"/>
@@ -37,7 +37,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98t-Ub-IMt" userLabel="Deal Button">
-                                        <rect key="frame" x="82.333333333333343" y="189.99999999999994" width="105.66666666666666" height="45"/>
+                                        <rect key="frame" x="82" y="189.99999999999994" width="105.66666666666669" height="45"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="dealbutton"/>
                                         <connections>
@@ -49,7 +49,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" baselineRelativeArrangement="YES"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ooF-w6-1pg" userLabel="Player Score Stack View">
-                                <rect key="frame" x="19.999999999999996" y="726.66666666666663" width="46.666666666666657" height="68.333333333333371"/>
+                                <rect key="frame" x="19.999999999999996" y="734.66666666666663" width="46.666666666666657" height="68.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Awv-BN-35A">
                                         <rect key="frame" x="0.0" y="0.0" width="46.666666666666664" height="20.333333333333332"/>
@@ -66,7 +66,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="6u7-J6-s4P">
-                                <rect key="frame" x="335.66666666666669" y="726.66666666666663" width="34.333333333333314" height="68.333333333333371"/>
+                                <rect key="frame" x="338.66666666666669" y="734.66666666666663" width="34.333333333333314" height="68.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsW-Wd-fZO">
                                         <rect key="frame" x="0.0" y="0.0" width="34.333333333333336" height="20.333333333333332"/>
@@ -103,6 +103,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dealButton" destination="98t-Ub-IMt" id="3a1-57-SAb"/>
                         <outlet property="leftImageView" destination="XKJ-z5-SOY" id="UUb-ZN-HkN"/>
                         <outlet property="leftScoreLabel" destination="Des-Wq-3MZ" id="KPX-Gh-fxY"/>
                         <outlet property="rightImageView" destination="aDD-51-tPv" id="ghy-Tk-SbB"/>
